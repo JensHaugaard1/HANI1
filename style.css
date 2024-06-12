@@ -1,0 +1,105 @@
+
+
+
+html {
+      overflow: hidden;
+      margin: 0% !important;
+      padding: 0% !important;
+    
+    }
+
+body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      background:#ffffff;
+      z-index: 1000;
+    }
+      
+
+.text {
+        margin-top: -3vw;
+        padding: 10px;
+        width: 65vw;
+        font-family: 'Neue Haas Grotesk display pro', sans-serif;
+        font-weight: 600;
+        font-size: 3vw;
+        line-height: 3vw;
+        font-kerning: no;
+        text-decoration: none;
+        text-align: left;
+}
+
+
+a {
+    text-decoration: none;
+    text-decoration-color: black;
+    pointer-events: all;
+  
+}
+
+p {
+  pointer-events: none;
+}
+
+ 
+.hover-underline-animation {
+   display: inline-block; /* Display inline block */
+   position: relative; /* Set position relative */
+   color: 
+ #000000; /* Set text color */
+ }
+ 
+.hover-underline-animation:after {
+   content: ''; /* Add content after the element */
+   position: absolute; /* Position absolute for pseudo-element */
+   width: 100%; /* Full width */
+   transform: scaleX(0); /* Initial scale of 0 for underline effect */
+   height: .2vw; /* Height of the underline */
+   bottom: 0%; /* Align to bottom */
+   margin-bottom: .vw;
+   left: 0; /* Align to left */
+   background-color: 
+ #000000; /* Background color of the underline */
+   transform-origin: bottom right; /* Set transform origin */
+   transition: transform 0.4s cubic-bezier(.37,.01,.65,.99); /* Transition effect for the underline */
+ }
+ 
+.hover-underline-animation:hover:after {
+   transform: scaleX(1); /* Scale the underline on hover */
+   transform-origin: bottom left; /* Set transform origin */
+}
+
+
+@media (max-width: 800px) {
+  .text {
+      margin-top: -7.5vw;
+      padding: 15px;
+      font-size: 8vw;
+      line-height: 8vw;
+      width: 90vw;
+  }
+
+  .hover-underline-animation:after {
+    height: .55vw; /* Height of the underline */
+    bottom: 0%; /* Align to bottom */
+    margin-bottom: .vw;
+
+  }
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: rgb(255, 255, 255);
+    left: -100px;
+    mix-blend-mode: difference;
+    z-index: 1000;
+
+
+  }
