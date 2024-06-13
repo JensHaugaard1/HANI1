@@ -22,8 +22,9 @@ body {
         margin-top: -3vw;
         padding: 10px;
         width: 65vw;
-        font-family: 'Neue Haas Grotesk display pro', sans-serif;
-        font-weight: 600;
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 500;
+        font-style: normal;
         font-size: 3vw;
         line-height: 3vw;
         font-kerning: no;
