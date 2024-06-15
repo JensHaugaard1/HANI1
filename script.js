@@ -1,3 +1,4 @@
+
 var cursor = document.getElementById("cursor");
 document.body.addEventListener("mousemove", function(e) {
   cursor.style.left = e.clientX + "px",
@@ -13,11 +14,3 @@ $(window).scroll(function(){
     }
 });
 
-$(function(){
-   $("a").click(function(evt){
-       var link = $(this).attr("href");
-       setTimeout(function() {
-           window.location.href = link;
-       }, 2000);
-   });
-});
